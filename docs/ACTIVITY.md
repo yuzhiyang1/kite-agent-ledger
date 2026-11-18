@@ -11,6 +11,7 @@
 ## 登记记录
 
 - GitHub 账号为 [yuzhiyang1](https://github.com/yuzhiyang1)，昵称为 yzy。
+- 已于 2026 年 11 月 18 日通过已登录的本人 OpenBuild 账号提交第二期官网免费报名。表单返回完成回执，活动页按钮变为 `Joined`。登记表与官网报名均已办理；不据此认定已通过贡献验收或获得奖励资格。个人联系方式、钱包地址及表单截图不存入公开仓库。
 - [官方登记表](https://docs.google.com/spreadsheets/d/1i_hiReiP9CzdcLdaDkPY57IczAN7uzVPtaEyvT9Tr3g/edit?gid=1757293515#gid=1757293515) 的“活动登记”工作表第 8 行已存在本人昵称及账号，未重复添加。
 - 已在本人 GitHub 单元格 C8 的备注中补充任务一固定仓库、开发方向、首个 Issue/PR、任务二仓库及验收证据、Open Dev Data PR。重新加载后核实备注仍在，并确认页面显示已保存到云端硬盘。
 - 表格原有字段仅为序号、昵称和 GitHub 账号；没有擅自新增列。仓库与方向通过本人行备注提供，仍待组织者核验认可。登记信息保存不等于组织者批准，也不等于奖励申请已受理。
