@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kite-agent-ledger"
+version = "0.1.0"
+description = "Read-only reconciliation of agent x402 calls on Kite Testnet"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+kite-agent-ledger = "kite_agent_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kite_agent_ledger*"]
