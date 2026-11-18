@@ -42,3 +42,5 @@ CLI 可通过 `--db` 或环境变量 `KITE_LEDGER_DB` 指定数据库，通过 `
 首版面向 Kite 测试网 pieUSD 的 x402 v2 `exact` 付款。调用方负责报价校验、授权、支付和重试决策，账本只接收调用元数据并核验证据。链上 `confirmed` 表示当前 RPC 中存在匹配事件，报告同时列出 HTTP 交付状态及证据来源。发生重组时重新核验。跨主机任务协调、批量结算和多签授权在首版范围之外。
 
 使用、贡献和验收材料见 [CLI 用法](docs/USAGE.md)、[架构与开发](docs/ARCHITECTURE.md)、[测试与部署](docs/TESTING.md)、[贡献说明](CONTRIBUTING.md) 和 [变更记录](CHANGELOG.md)。许可证见 [MIT](LICENSE)。
+
+KiteAI 第二期的两项任务分别核对，当前贡献、登记和待完成事项见 [活动任务记录](docs/ACTIVITY.md)。
