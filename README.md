@@ -23,6 +23,8 @@ python -m venv .venv
 
 默认演示模拟一次超时，输出 `unknown`。加上 `--live` 会额外回查一笔公开的 Kite 测试网历史转账，输出真实交易哈希、区块号和事件索引。该回查使用合成任务标识和手工导入的历史交易，作为链上核验演示。两种演示都使用临时数据库。
 
+需要验证真实付款时，可使用 [测试网付款脚本](docs/TESTING.md#真实付款复现)。已完成的联调返回 HTTP 200 和真实结算凭证，账本核验链上转账为 `confirmed`，扣款恰好为 `0.1 pieUSD`。交易链接及验证范围见 [验收记录](docs/EVIDENCE.md)。
+
 CLI 可通过 `--db` 或环境变量 `KITE_LEDGER_DB` 指定数据库，通过 `reconcile --rpc-url` 或 `KITE_LEDGER_RPC_URL` 指定可信 HTTPS RPC。直接设置进程环境变量，样例见 [配置文件](.env.example)。
 
 ## KiteAI 技术关联
