@@ -37,6 +37,7 @@
 
 ## 活动提交状态
 
-- 项目版本为 `0.1.0`。公开仓库为 [yuzhiyang1/kite-agent-ledger](https://github.com/yuzhiyang1/kite-agent-ledger)，初始交付分支为 `trunk`。提交及 CI 以该仓库的实时记录为准。
-- Open Dev Data 登记待办理。项目技术关联及可运行示例见 [README](../README.md)。登记结果、生态映射生效、抓取和开发者归因分别核验。
+- 项目版本为 `0.1.0`。公开仓库为 [yuzhiyang1/kite-agent-ledger](https://github.com/yuzhiyang1/kite-agent-ledger)，默认分支为 `trunk`。[PR #1](https://github.com/yuzhiyang1/kite-agent-ledger/pull/1) 已合并，合并提交为 `8f68f174a994b1e8d0a25b168f302ffa4140c8b5`，[合并后 CI](https://github.com/yuzhiyang1/kite-agent-ledger/actions/runs/44231906161) 已通过。
+- Open Dev Data 登记已通过本人账号提交 [PR #3157](https://github.com/electric-capital/open-dev-data/pull/3157)，上游 CI 已通过，当前等待维护者审核与合并。迁移文件为 `2026-11-18T034201_add_kite_agent_ledger`，只新增 `repadd KiteAI https://github.com/yuzhiyang1/kite-agent-ledger`。上游锁定环境下的 28 项测试、997 个迁移文件的完整验证均通过，候选生态导出确认该仓库恰好映射到 KiteAI 一次。
+- 登记结果以该上游 PR 和合并后的公开生态映射为准。项目技术关联与可运行示例见 [README](../README.md)，Commit 抓取和开发者归因继续分别核验。
 - 后续按 [贡献说明](../CONTRIBUTING.md) 保存每次真实贡献日期、链接、变更摘要、测试及合并状态。
