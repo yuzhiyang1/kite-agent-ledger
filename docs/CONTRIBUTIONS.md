@@ -6,7 +6,7 @@
 
 用户本轮要求每日提交 3–5 个有实际价值的上游代码 PR，并从 2026 年 11 月 19 日起累计 9 个不同的真实贡献日期。原先的 15 个 PR 目标作为最低累计数量，不再达到 15 个就提前停止日期任务。每天争取至少 3 个；真实任务不足时记录原因，不能降低规范或凑数。已合并的 Hono PR #74 计入目标。自己仓库的活动记录 PR、Open Dev Data 登记、单独的 CI 验证分支，以及重复或无效投稿不计入这 15 个。
 
-当前已提交 **4 / 至少 15** 个，其中 **1 个已合并、3 个待审核**。2026-11-19 已提交三个独立代码 PR（#78、#81、#82），达到本轮每日 3–5 个的下限。待审核条目是通过自审的投稿，是否获维护者和主办方认可仍待核验。Hono 在 11 月有 **2 个不同的真实代码贡献日期**，11 月 19 日的贡献仍待上游审核；指南要求的十个不同日期和用户提供的十个 PR 门槛分别记录，不互相替代。主办方的最终认定仍以正式核验为准。
+当前已提交 **5 / 至少 15** 个，其中 **1 个已合并、4 个待审核**。2026-11-19 已提交四个独立代码 PR（#78、#81、#82、#84），达到本轮每日 3–5 个的下限。待审核条目是通过自审的投稿，是否获维护者和主办方认可仍待核验。Hono 在 11 月有 **2 个不同的真实代码贡献日期**，11 月 19 日的贡献仍待上游审核；指南要求的十个不同日期和用户提供的十个 PR 门槛分别记录，不互相替代。主办方的最终认定仍以正式核验为准。
 
 ## 已提交的贡献
 
@@ -16,8 +16,9 @@
 | 2026-11-19 | Hono [PR #78](https://github.com/BrKDDD/kite-x402-hono/pull/78)，关联 [Issue #77](https://github.com/BrKDDD/kite-x402-hono/issues/77) | 修复探测期间新增目标后，旧批次回写缓存、后续检查复用旧批次并漏报不健康依赖的问题 | [e8c33f4](https://github.com/yuzhiyang1/kite-x402-hono/commit/e8c33f4f6438f41add52b91a8ca1bd4fba0d9263) | 待审核；本人 Fork 与上游 CI 均已通过 |
 | 2026-11-19 | Hono [PR #81](https://github.com/BrKDDD/kite-x402-hono/pull/81)，关联 [Issue #79](https://github.com/BrKDDD/kite-x402-hono/issues/79) | 修复 CLI 预检测试把 URL pathname 当作系统路径、固定使用 /tmp，导致 Windows 或中文空格路径无法运行的问题 | [51a6b13](https://github.com/yuzhiyang1/kite-x402-hono/commit/51a6b13267ae1b18f2a1e7e0cb6239a579f6495a) | 待审核；上游 CI 已通过，Windows 全量 292 项通过 |
 | 2026-11-19 | Hono [PR #82](https://github.com/BrKDDD/kite-x402-hono/pull/82)，关联 [Issue #80](https://github.com/BrKDDD/kite-x402-hono/issues/80) | 修复过期回执导入先挤掉其他有效交易，再被清理导致查询记录丢失的问题；保留同交易过期覆盖原语义 | [c9903b7](https://github.com/yuzhiyang1/kite-x402-hono/commit/c9903b79dc8dffb226de91e57acc3c4b82a89b1f) | 待审核；Fork 与上游 Linux 全量 296 项及打包安装 CI 均已通过 |
+| 2026-11-19 | Hono [PR #84](https://github.com/BrKDDD/kite-x402-hono/pull/84)，关联 [Issue #83](https://github.com/BrKDDD/kite-x402-hono/issues/83) | 固定中间件初始化时的支付策略，防止服务端复用或修改调用方配置后悄然放宽金额、方案或验证要求 | [90a2161](https://github.com/yuzhiyang1/kite-x402-hono/commit/90a216126607c351fbb552b9835719931c36815e) | 待审核；Fork 与上游 Linux 299 项及完整 CI 均已通过 |
 
-四条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
+五条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
 
 ## 11 月 19 日的实现和验证
 
@@ -38,7 +39,7 @@
 
 | 项目 | 已有工作及后续边界 |
 |---|---|
-| Hono | PR #69、#70、#71 分别涉及 nonce、结算金额和幂等性能；请求体统计已由 PR #75 合并，配置预检已由 PR #76 合并。本日分别以 PR #78、#81、#82 处理 readiness 目标变更竞态、CLI 测试路径和过期回执准入；三个问题各有独立复现，不互相依赖。 |
+| Hono | PR #69、#70、#71 分别涉及 nonce、结算金额和幂等性能；请求体统计已由 PR #75 合并，配置预检已由 PR #76 合并。本日分别以 PR #78、#81、#82、#84 处理 readiness 目标变更竞态、CLI 测试路径、过期回执准入和支付策略快照；四个问题各有独立复现，不互相依赖。 |
 | Explorer | 健康探测故障隔离已有开放 PR #67，避免重复实现。 |
 | Axum | 路由定价、客户端结算凭证、Compose 验证、并发许可等已有开放 PR，进入具体任务前继续核查其实现和最新审核。 |
 | ZK Attestation | 证明输入、清理器选项、网络配置和重试参数已有开放 PR，避免重复认领。 |
@@ -76,3 +77,13 @@ PR #81 的现有两个 CLI 测试在原代码失败，修复后 Windows 292 项�
 PR #82 的两个容量回归在原实现失败，四项新回归和原有兼容性回归通过。[本人 Fork Linux CI](https://github.com/yuzhiyang1/kite-x402-hono/actions/runs/44449414714) 验证精确提交 `c9903b7`，296 项及完整检查通过。Windows 为 294 通过、2 个既有 CLI 路径测试失败，独立修复见 #81；没有跨 PR 混入代码来掩盖限制。每项只有自身源文件/测试改动，工作流文件未改。
 
 [PR #82 的上游 CI](https://github.com/BrKDDD/kite-x402-hono/actions/runs/44449659011) 随后也已通过，验证精确提交 `c9903b7`；与 Fork 验证分别记录，PR 仍待维护者审核。
+
+## 支付策略初始化快照
+
+[PR #84](https://github.com/BrKDDD/kite-x402-hono/pull/84) 对应 [Issue #83](https://github.com/BrKDDD/kite-x402-hono/issues/83)。原实现保留调用方配置引用；服务端在初始化后将最低金额改成 NaN，会使可信但金额不足的请求从 402 变成 200。没有证据表明外部请求可直接改写配置。
+
+修复在现有校验后复制方案数组和金额、facilitator 要求，调用方仍可修改自己的对象并显式创建新策略实例。七项回归在原代码全部失败、修复后通过；原有支付成功、拒绝及默认支付流水回归保持通过。Windows 全量和覆盖率 297 通过、2 个已知 CLI 路径失败，没有混入 #81。
+
+[精确源提交 Fork Ubuntu CI](https://github.com/yuzhiyang1/kite-x402-hono/actions/runs/44450728876) 对 `90a2161` 的 299 项测试、覆盖率、格式、类型、构建、审计、打包和独立安装检查全部通过。付款元数据由测试构造，不代表真实付款或链上结算。
+
+[上游 PR #84 CI](https://github.com/BrKDDD/kite-x402-hono/actions/runs/44450913217) 也已对精确提交 `90a2161` 通过；维护者审核仍待完成。
