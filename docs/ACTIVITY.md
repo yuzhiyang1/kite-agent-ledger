@@ -1,12 +1,12 @@
 # KiteAI 第二期任务核对与贡献记录
 
-核验日期为 2026 年 11 月 20 日，开发日期按 Asia/Shanghai 记录。本页供参与者和组织者核验，不替代组织者审核，也不表示 EC 已完成抓取或归因。
+核验日期为 2026 年 11 月 21 日，开发日期按 Asia/Shanghai 记录。本页供参与者和组织者核验，不替代组织者审核，也不表示 EC 已完成抓取或归因。
 
 依据为用户提供的《KiteAI 第二期开发者参与指南》（2026 年 11 月 16 日）及 [OpenBuild 第二期正式公告](https://openbuild.xyz/learn/challenges/2115131537)。一般参与者必须完成两项任务，任务二不能替代任务一。
 
 ## 当前结论
 
-任务一的 Hono PR #74、#81 已合并；#81 合并发生在 11 月 20 日，但代码日期仍为 19 日。11 月 20 日新增 #92、#93、#94 三个独立代码 PR，与此前四项一起待审核，累计九个投稿（二合并、七待审）。从 11 月 19 日起的九日目标为 2/9，本月代码日期为 18、19、20 日，未达到自然月至少十个不同日期的要求。至少 15 个 PR 的最低数量也尚未完成。详情和逐次规范审查见 [每日贡献记录](CONTRIBUTIONS.md)。任务二首版、真实测试网付款和文档已具备，持续维护及最终活动验收仍需继续。
+任务一的 Hono PR #74、#81、#86 已合并；#81 和 #86 的合并日期是 11 月 20 日，开发日期仍为 19 日。11 月 21 日新增 #102、#103、#104 三个独立代码 PR，累计十二个投稿（三合并、九待审），各项 Fork 与上游 CI 均已通过。从 11 月 19 日起的九日目标为 3/9，本月代码日期为 18、19、20、21 日，未达到自然月至少十个不同日期的要求。至少 15 个 PR 的最低数量也尚未完成。详情和逐次规范审查见 [每日贡献记录](CONTRIBUTIONS.md)。任务二首版、真实测试网付款和文档已具备，持续维护及最终活动验收仍需继续。
 
 ## 登记记录
 
@@ -28,7 +28,7 @@
 | 实际代码修复和回归测试 | 修复空字符串最旧键不被淘汰导致认证缓存突破容量上限；新增三项测试，其中两项在原代码上失败 | 已实现并验证 |
 | 按项目规范检查和构建 | 首项贡献使用 Node 22.22.0、Bun 1.4.2；281 项测试、格式、类型、构建及独立安装验证通过；后续贡献的实际检查与环境限制按每日贡献记录分别保存 | 首项已合并；新贡献的 Fork 与上游 CI 均已通过 |
 | 本人 Commit、本人 PR | [Commit 46fc252](https://github.com/yuzhiyang1/kite-x402-hono/commit/46fc25202ae917139e787c54ab74b0e03cd271ba) 的 GitHub 作者关联为 yuzhiyang1；[PR #74](https://github.com/BrKDDD/kite-x402-hono/pull/74) 同账号发起 | 已于 11 月 18 日合并；新增 PR #78 的本人署名也已核实 |
-| 每个自然月至少十个不同日期 | 当前代码贡献日期为 2026-11-18、2026-11-19、2026-11-20；前两日分别已有合并代码，20 日三项待审，最终有效计入仍以组织者审核为准 | 未达标；11 月至少还需七个不同日期 |
+| 每个自然月至少十个不同日期 | 当前代码贡献日期为 2026-11-18、2026-11-19、2026-11-20、2026-11-21；前两日分别已有合并代码，20、21 日各三项待审，最终有效计入仍以组织者审核为准 | 未达标；11 月至少还需六个不同日期 |
 | 持续维护并响应审核 | 保持同一 PR 处理 review；后续修改先确认真实需求与重复工作 | 持续进行，不能提前记为完成 |
 
 缓存修复只影响显式选用的 `PaymentAuthCache` 工具。它不会在默认付费路由启用认证缓存，也不改变付款验证或结算流程。本次不需要链上付款，测试中的 facilitator 为项目原有模拟实现。
@@ -63,10 +63,13 @@ Passport `session execute` 的托管执行路径仍返回服务端内部错误�
 | 2026-11-19 | 任务一 kite-x402-hono | [51a6b13](https://github.com/yuzhiyang1/kite-x402-hono/commit/51a6b13267ae1b18f2a1e7e0cb6239a579f6495a) | CLI 预检测试系统路径与临时目录兼容性；Windows 全量 292 项和上游 CI 通过 | PR #81 已于 11 月 20 日合并，开发日期仍为 19 日 |
 | 2026-11-19 | 任务一 kite-x402-hono | [c9903b7](https://github.com/yuzhiyang1/kite-x402-hono/commit/c9903b79dc8dffb226de91e57acc3c4b82a89b1f) | 过期回执不挤占有效交易档案容量；Fork Linux 全量 296 项及完整 CI 通过 | PR #82 待审核，Fork 与上游 CI 均已通过 |
 | 2026-11-19 | 任务一 kite-x402-hono | [90a2161](https://github.com/yuzhiyang1/kite-x402-hono/commit/90a216126607c351fbb552b9835719931c36815e) | 支付策略配置快照，七项原实现失败回归通过；Fork Linux 全量 299 项及完整 CI 通过 | PR #84 待审核，Fork 与上游 CI 均已通过 |
-| 2026-11-19 | 任务一 kite-x402-hono | [c7c6472](https://github.com/yuzhiyang1/kite-x402-hono/commit/c7c6472b474988558c60af46dc7ed94f1d5f33c2) | 签名与验证两端拒绝非法 HTTP 状态，保留合法 v1 签名；Fork Linux 全量 296 项及完整 CI 通过 | PR #86 待审核，Fork 与上游 CI 均已通过 |
+| 2026-11-19 | 任务一 kite-x402-hono | [c7c6472](https://github.com/yuzhiyang1/kite-x402-hono/commit/c7c6472b474988558c60af46dc7ed94f1d5f33c2) | 签名与验证两端拒绝非法 HTTP 状态，保留合法 v1 签名；Fork Linux 全量 296 项及完整 CI 通过 | PR #86 已于 11 月 20 日 22:47 合并，开发日期仍为 19 日 |
 | 2026-11-20 | 任务一 kite-x402-hono | [948f86f](https://github.com/yuzhiyang1/kite-x402-hono/commit/948f86f54300b6c229e4cfcc6ada3f2d77489836) | webhook 准备和非 Error 异常结构化；Windows 全量/覆盖率 327 项，Fork 与上游 CI 通过 | PR #92 待审核 |
 | 2026-11-20 | 任务一 kite-x402-hono | [d376e74](https://github.com/yuzhiyang1/kite-x402-hono/commit/d376e74410f8fe16d7eb116c1154ee0667c7f0b3) | token bucket 容量安全范围校验；Windows 全量/覆盖率 324 项，Fork 与上游 CI 通过 | PR #93 待审核 |
 | 2026-11-20 | 任务一 kite-x402-hono | [36dc415](https://github.com/yuzhiyang1/kite-x402-hono/commit/36dc4157b25beb98f59b24eebf1d23e99577ffd5) | 缓存克隆失败原子性；Windows 独立复跑/覆盖率 324 项，Fork 与上游 CI 通过，首次 CLI 超时已记录 | PR #94 待审核 |
+| 2026-11-21 | 任务一 kite-x402-hono | [1e0bb53](https://github.com/yuzhiyang1/kite-x402-hono/commit/1e0bb538988c3fc597b316c0e4b539e5a5ac9fcd) | 排队超时运行时上界；Windows 全量/覆盖率 363 项及 Fork/上游完整 CI 通过 | PR #102 待审核 |
+| 2026-11-21 | 任务一 kite-x402-hono | [a6cac42](https://github.com/yuzhiyang1/kite-x402-hono/commit/a6cac428eea2ede274d8cf511f2b110771c2f561) | 结算事件运行时类型及单次快照；Windows 全量/覆盖率 365 项及 Fork/上游完整 CI 通过 | PR #103 待审核 |
+| 2026-11-21 | 任务一 kite-x402-hono | [8dcee94](https://github.com/yuzhiyang1/kite-x402-hono/commit/8dcee940362075212dca80bd1b547ac0e0cec19d) | 幂等指纹超限指标；Windows 全量/覆盖率 367 项及 Fork/上游完整 CI 通过 | PR #104 待审核 |
 | 2026-11-18 | 任务二 kite-agent-ledger | [9cd296e](https://github.com/yuzhiyang1/kite-agent-ledger/commit/9cd296ea29acf3074f74efd7a2cd427247a2e7cf) | 初版 Agent 支付审计与测试网对账；测试、wheel 与 CI 验证 | 已进入 trunk |
 | 2026-11-18 | 任务二 kite-agent-ledger | [c9caa2b](https://github.com/yuzhiyang1/kite-agent-ledger/commit/c9caa2bd31b6c1915c44bfd133c3be2692eb8363) | 真实测试币付款、响应头导入和复现脚本；20 项测试及 CI | PR #1 已合并 |
 
@@ -97,8 +100,8 @@ Passport `session execute` 的托管执行路径仍返回服务端内部错误�
 
 ## 后续必须完成的事项
 
-1. PR #74、#81 已合并，继续配合维护者审核 PR #78、#82、#84、#86、#92、#93、#94，并在各自同一 PR 响应修改；未发生的审核不能提前记作通过。
-2. 11 月在至少另外七个不同日期继续产生有独立价值的真实代码贡献。12 月也需独立满足至少十个不同日期，不能跨自然月抵扣。实际活动周期及最终计数以正式公告和组织者核验为准。
+1. PR #74、#81、#86 已合并，继续配合维护者审核 PR #78、#82、#84、#92、#93、#94、#102、#103、#104，并在各自同一 PR 响应修改；未发生的审核不能提前记作通过。
+2. 11 月在至少另外六个不同日期继续产生有独立价值的真实代码贡献。12 月也需独立满足至少十个不同日期，不能跨自然月抵扣。实际活动周期及最终计数以正式公告和组织者核验为准。
 3. 后续贡献继续先查需求和重复工作，再做修复与回归；不倒填 Git 日期、制造空提交、修改时间戳或把自动检查次数当成人工贡献。
 4. 按实际使用反馈持续维护原创项目，并在材料提交时更新本页的日期、Commit、演示、测试与审核结果。
 5. 跟进 Open Dev Data PR #3157 的维护者审核，再分别核对公开映射、抓取和作者归因；当前账号没有该上游合并权限。
