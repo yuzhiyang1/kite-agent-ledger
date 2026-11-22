@@ -1,14 +1,14 @@
 # 指定项目的每日代码贡献
 
-更新日期：2026 年 11 月 21 日，按 Asia/Shanghai 记录开发日期。
+更新日期：2026 年 11 月 22 日，按 Asia/Shanghai 记录开发日期。
 
 ## 目标和统计范围
 
 用户本轮要求每日提交 3–5 个有实际价值的上游代码 PR，并从 2026 年 11 月 19 日起累计 9 个不同的真实贡献日期。原先的 15 个 PR 目标作为最低累计数量，不再达到 15 个就提前停止日期任务。每天争取至少 3 个；真实任务不足时记录原因，不能降低规范或凑数。已合并的 Hono PR #74 计入目标。自己仓库的活动记录 PR、Open Dev Data 登记、单独的 CI 验证分支，以及重复或无效投稿不计入这 15 个。
 
-当前已提交 **12 / 至少 15** 个，其中 **3 个已合并、9 个待审核**。11 月 21 日提交三个独立代码 PR（#102、#103、#104），达到每日目标下限。#86 于北京时间 11 月 20 日 22:47 合并，开发日期仍为 19 日；合并不会增加日期。
+当前已提交 **15 / 至少 15** 个，其中 **5 个已合并、10 个待审核**。11 月 22 日新增三个独立代码 PR（#111、#112、#113），达到每日目标下限。#93、#102 于北京时间 11 月 21 日 14:10 合并，开发日期仍分别为 20、21 日。
 
-从 11 月 19 日起的新一轮日期为 **3 / 9**（19、20、21 日），还需六个后续不同日期；本月连同 18 日已有 **四个不同代码贡献日期**。待审核投稿与未获主办方认定的日期分别保留状态；指南每月十日和 PR 数量不互相替代，不据此认定已通过活动验收。
+从 11 月 19 日起的新一轮日期为 **4 / 9**（19、20、21、22 日），还需五个后续不同日期；本月连同 18 日已有 **五个不同代码贡献日期**。投稿数量达到最低目标，但日期要求和最终认定尚未完成；继续每日真实贡献，不因到达 15 个提前停止。CI 通过、维护者合并和主办方认定分别记录。
 
 ## 已提交的贡献
 
@@ -21,13 +21,16 @@
 | 2026-11-19 | Hono [PR #84](https://github.com/BrKDDD/kite-x402-hono/pull/84)，关联 [Issue #83](https://github.com/BrKDDD/kite-x402-hono/issues/83) | 固定中间件初始化时的支付策略，防止服务端复用或修改调用方配置后悄然放宽金额、方案或验证要求 | [90a2161](https://github.com/yuzhiyang1/kite-x402-hono/commit/90a216126607c351fbb552b9835719931c36815e) | 待审核；Fork 与上游 Linux 299 项及完整 CI 均已通过 |
 | 2026-11-19 | Hono [PR #86](https://github.com/BrKDDD/kite-x402-hono/pull/86)，关联 [Issue #85](https://github.com/BrKDDD/kite-x402-hono/issues/85) | 拒绝签名回执的非法 HTTP 状态，避免 NaN、Infinity 和 JSON null 使用同一 MAC 且校验通过 | [c7c6472](https://github.com/yuzhiyang1/kite-x402-hono/commit/c7c6472b474988558c60af46dc7ed94f1d5f33c2) | 已于北京时间 11 月 20 日 22:47 合并，上游整合提交 [06664a8](https://github.com/BrKDDD/kite-x402-hono/commit/06664a8cc56e30fdca408d0a05a774d5ec27cd33) |
 | 2026-11-20 | Hono [PR #92](https://github.com/BrKDDD/kite-x402-hono/pull/92)，关联 [Issue #89](https://github.com/BrKDDD/kite-x402-hono/issues/89) | webhook 准备阶段和非 Error 异常统一返回结构化失败，保留签名格式与无自动重试行为 | [948f86f](https://github.com/yuzhiyang1/kite-x402-hono/commit/948f86f54300b6c229e4cfcc6ada3f2d77489836) | 待审核；Windows 327 项、Fork 和上游完整 CI 均通过 |
-| 2026-11-20 | Hono [PR #93](https://github.com/BrKDDD/kite-x402-hono/pull/93)，关联 [Issue #90](https://github.com/BrKDDD/kite-x402-hono/issues/90) | 拒绝非有限或无法逐枚扣减的 token bucket 容量，避免配额永不耗尽 | [d376e74](https://github.com/yuzhiyang1/kite-x402-hono/commit/d376e74410f8fe16d7eb116c1154ee0667c7f0b3) | 待审核；Windows 324 项、Fork 和上游完整 CI 均通过 |
+| 2026-11-20 | Hono [PR #93](https://github.com/BrKDDD/kite-x402-hono/pull/93)，关联 [Issue #90](https://github.com/BrKDDD/kite-x402-hono/issues/90) | 拒绝非有限或无法逐枚扣减的 token bucket 容量，避免配额永不耗尽 | [d376e74](https://github.com/yuzhiyang1/kite-x402-hono/commit/d376e74410f8fe16d7eb116c1154ee0667c7f0b3) | 已于北京时间 11 月 21 日 14:10 合并，上游整合提交 [0e546a1](https://github.com/BrKDDD/kite-x402-hono/commit/0e546a1e51cc1de3278110420f92a512a367c08e) |
 | 2026-11-20 | Hono [PR #94](https://github.com/BrKDDD/kite-x402-hono/pull/94)，关联 [Issue #91](https://github.com/BrKDDD/kite-x402-hono/issues/91) | 返回值克隆完成后再发布新缓存，防止失败写入覆盖、淘汰或打乱旧响应 | [36dc415](https://github.com/yuzhiyang1/kite-x402-hono/commit/36dc4157b25beb98f59b24eebf1d23e99577ffd5) | 待审核；Windows 隔离复跑 324 项、Fork 与上游完整 CI 均通过；首次 CLI 超时另存 |
-| 2026-11-21 | Hono [PR #102](https://github.com/BrKDDD/kite-x402-hono/pull/102)，关联 [Issue #99](https://github.com/BrKDDD/kite-x402-hono/issues/99) | 拒绝运行时会截断为 1 毫秒的过大排队超时，保留零、最大边界与小数兼容性 | [1e0bb53](https://github.com/yuzhiyang1/kite-x402-hono/commit/1e0bb538988c3fc597b316c0e4b539e5a5ac9fcd) | 待审核；Windows 363 项、Fork 与上游完整 CI 通过 |
+| 2026-11-21 | Hono [PR #102](https://github.com/BrKDDD/kite-x402-hono/pull/102)，关联 [Issue #99](https://github.com/BrKDDD/kite-x402-hono/issues/99) | 拒绝运行时会截断为 1 毫秒的过大排队超时，保留零、最大边界与小数兼容性 | [1e0bb53](https://github.com/yuzhiyang1/kite-x402-hono/commit/1e0bb538988c3fc597b316c0e4b539e5a5ac9fcd) | 已于北京时间 11 月 21 日 14:10 合并，上游整合提交 [e4cd7ec](https://github.com/BrKDDD/kite-x402-hono/commit/e4cd7ec7f6d66a2aa86a42ffa95232359d59f9b4) |
 | 2026-11-21 | Hono [PR #103](https://github.com/BrKDDD/kite-x402-hono/pull/103)，关联 [Issue #100](https://github.com/BrKDDD/kite-x402-hono/issues/100) | 校验结算通知的运行时字段类型并使用单次快照，避免隐式转换与 getter 重读造成失真 | [a6cac42](https://github.com/yuzhiyang1/kite-x402-hono/commit/a6cac428eea2ede274d8cf511f2b110771c2f561) | 待审核；Windows 365 项、Fork 与上游完整 CI 通过 |
 | 2026-11-21 | Hono [PR #104](https://github.com/BrKDDD/kite-x402-hono/pull/104)，关联 [Issue #101](https://github.com/BrKDDD/kite-x402-hono/issues/101) | 统计幂等指纹读取阶段的正文超限，区分中止、读取故障与上游错误，避免漏计和重复计数 | [8dcee94](https://github.com/yuzhiyang1/kite-x402-hono/commit/8dcee940362075212dca80bd1b547ac0e0cec19d) | 待审核；Windows 367 项、Fork 与上游完整 CI 通过 |
+| 2026-11-22 | Hono [PR #111](https://github.com/BrKDDD/kite-x402-hono/pull/111)，关联 [Issue #108](https://github.com/BrKDDD/kite-x402-hono/issues/108) | 相同 RPC URL 共用一个熔断状态，防止健康影子绕过故障转移 | [5c5977b](https://github.com/yuzhiyang1/kite-x402-hono/commit/5c5977ba5dcaef8eb2cd41b1a2a059bfc93fcfe0) | 待审核；Windows 381 项、Fork 与上游完整 CI 通过 |
+| 2026-11-22 | Hono [PR #112](https://github.com/BrKDDD/kite-x402-hono/pull/112)，关联 [Issue #109](https://github.com/BrKDDD/kite-x402-hono/issues/109) | 隔离访问日志字段准备异常，保留已经完成的应用和付款响应 | [fb20a46](https://github.com/yuzhiyang1/kite-x402-hono/commit/fb20a4699765fdae6c86651c4047668ffb05f315) | 待审核；Windows 386 项、Fork 与上游完整 CI 通过 |
+| 2026-11-22 | Hono [PR #113](https://github.com/BrKDDD/kite-x402-hono/pull/113)，关联 [Issue #110](https://github.com/BrKDDD/kite-x402-hono/issues/110) | 将畸形 facilitator 能力声明归入依赖不可用，避免 readyz 返回内部错误 | [be1bc04](https://github.com/yuzhiyang1/kite-x402-hono/commit/be1bc0427d2abc920997b20380e85b5b2efc8e27) | 待审核；Windows 384 项、Fork 与上游完整 CI 通过 |
 
-十二条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
+十五条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
 
 ## 11 月 19 日的实现和验证
 
@@ -64,7 +67,7 @@ Hono 仍是向组织者登记的任务一主仓库。其他项目的补充贡献
 
 ## 新一轮日期和提交前审核要求
 
-用户已明确“从今天起再做 9 个不同日期”，锚点为北京时间 2026-11-19，19 日计为其中一天。当前本轮 **3 / 9 日期**（11-19、11-20、11-21）；连同 11-18，本月有四个已产生代码的日期，按 PR 实际状态保留待核验说明。还需至少六个后续不同日期；只有按日实际完成贡献才能增加计数，不能预填未来日期。
+用户已明确“从今天起再做 9 个不同日期”，锚点为北京时间 2026-11-19，19 日计为其中一天。当前本轮 **4 / 9 日期**（11-19、11-20、11-21、11-22）；连同 11-18，本月有五个已产生代码的日期，按 PR 实际状态保留待核验说明。还需至少五个后续不同日期；只有按日实际完成贡献才能增加计数，不能预填未来日期。
 
 同日 3–5 个 PR 仍仅算一个日期。九日内持续达到每日 3–5 个独立任务时，数量自然可能超过原 15 个目标；不为赶数量拆分同一问题、占用他人任务或提交无独立价值的改动。
 
@@ -147,4 +150,20 @@ PR #82 的两个容量回归在原实现失败，四项新回归和原有兼容�
 
 九项本人待审改动在最新 main 的隔离检出中逐个应用原提交差异，保留已合并的他人修复。组合全量及覆盖率均 **408 通过 / 61 文件、零失败**，格式、类型、构建、生产依赖审计、打包、空目录安装和 CLI/测试网配置健康检查通过。没有产生或推送组合代码提交，不额外计数或日期。本日三项投稿共增加一个真实贡献日期。
 
-每日任务保持启用，下一次为北京时间 11 月 22 日 9:30；仍先处理审核，再推进真实需求。
+11 月 21 日结束时每日任务保持启用，当时下一次为北京时间 11 月 22 日 9:30；仍先处理审核，再推进真实需求。
+
+## 11 月 22 日贡献与审核
+
+基线为最新 upstream/main `31f64255884c2c8e060c57d21fdffb7c2b078852`，包含新合并的 #93、#102 和维护者 #105 的挑战检查生命周期修复。本人七项旧待审 PR 均无新评论或 review；不产生无价值更新。避开 #70、#71、#95、#97、#107 等已有任务，以 #108、#109、#110 先说明本日三个独立问题和最小方案，再实施和逐次审查。
+
+| PR | Windows 全量及覆盖率 | 精确源提交 Fork CI | 上游 CI |
+|---|---|---|---|
+| #111 | 均 381 通过、零失败 | [44972545224](https://github.com/yuzhiyang1/kite-x402-hono/actions/runs/44972545224) | [44972697818](https://github.com/BrKDDD/kite-x402-hono/actions/runs/44972697818) |
+| #112 | 均 386 通过、零失败 | [44972667440](https://github.com/yuzhiyang1/kite-x402-hono/actions/runs/44972667440) | [44972768213](https://github.com/BrKDDD/kite-x402-hono/actions/runs/44972768213) |
+| #113 | 均 384 通过、零失败 | [44972734237](https://github.com/yuzhiyang1/kite-x402-hono/actions/runs/44972734237) | [44972855259](https://github.com/BrKDDD/kite-x402-hono/actions/runs/44972855259) |
+
+三项 Fork 与上游完整 CI 通过，含打包安装、CLI 和健康检查。提交前逐项核对指南/仓库规范、查重、差异、兼容性、回归、秘密扫描、本人作者关联、最新基线、同名远端头和默认分支。细节见 [11 月 22 日提交审查](reviews/2026-11-22.md)。
+
+将十项本人待审改动的原始补丁组合到隔离检出后，全量与覆盖率均 **440 项 / 65 文件，零失败**；格式、类型、构建、零漏洞审计、打包安装和显式测试网配置健康检查通过。测试后反向补丁检查确认十项原差异均在，已合并的限流与排队修复保持 main 原样。组合未提交或发布，不增加投稿或日期。
+
+今天三项投稿只计一个真实日期。每日任务保持启用，下一次为北京时间 11 月 23 日 9:30。数量达标后继续完成剩余五个不同日期，最终有效贡献和活动验收仍待主办方核验。
