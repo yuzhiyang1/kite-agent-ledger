@@ -60,18 +60,18 @@ Passport `session execute` 的托管执行路径仍返回服务端内部错误�
 
 | 日期 | 任务与仓库 | 本人新增 Commit | 变更与验证 | 审核状态 |
 |---|---|---|---|---|
-| 2026-11-18 | 任务一 kite-x402-hono | [46fc252](https://github.com/yuzhiyang1/kite-x402-hono/commit/46fc25202ae917139e787c54ab74b0e03cd271ba) | 缓存容量修复、三项回归；全量 281 项测试及构建通过 | 已于北京时间 11-18 23:25 合并；原始开发日期保留 |
+| 2026-11-18 | 任务一 kite-x402-hono | [46fc252](https://github.com/yuzhiyang1/kite-x402-hono/commit/46fc25202ae917139e787c54ab74b0e03cd271ba) | 缓存容量修复、三项回归；全量 281 项测试及构建通过 | 上游 PR #74 已合并 |
 | 2026-11-19 | 任务一 kite-x402-hono | [e8c33f4](https://github.com/yuzhiyang1/kite-x402-hono/commit/e8c33f4f6438f41add52b91a8ca1bd4fba0d9263) | 健康探测目标更新竞态修复、三项回归；Fork 的完整 Ubuntu CI 通过 | 上游 PR #78 待审核，详情见每日贡献记录 |
-| 2026-11-19 | 任务一 kite-x402-hono | [51a6b13](https://github.com/yuzhiyang1/kite-x402-hono/commit/51a6b13267ae1b18f2a1e7e0cb6239a579f6495a) | CLI 预检测试系统路径与临时目录兼容性；Windows 全量 292 项和上游 CI 通过 | 已于北京时间 11-20 00:25 合并；原始开发日期保留 |
+| 2026-11-19 | 任务一 kite-x402-hono | [51a6b13](https://github.com/yuzhiyang1/kite-x402-hono/commit/51a6b13267ae1b18f2a1e7e0cb6239a579f6495a) | CLI 预检测试系统路径与临时目录兼容性；Windows 全量 292 项和上游 CI 通过 | PR #81 已于 11 月 20 日合并，开发日期仍为 19 日 |
 | 2026-11-19 | 任务一 kite-x402-hono | [c9903b7](https://github.com/yuzhiyang1/kite-x402-hono/commit/c9903b79dc8dffb226de91e57acc3c4b82a89b1f) | 过期回执不挤占有效交易档案容量；Fork Linux 全量 296 项及完整 CI 通过 | PR #82 待审核，Fork 与上游 CI 均已通过 |
 | 2026-11-19 | 任务一 kite-x402-hono | [90a2161](https://github.com/yuzhiyang1/kite-x402-hono/commit/90a216126607c351fbb552b9835719931c36815e) | 支付策略配置快照，七项原实现失败回归通过；Fork Linux 全量 299 项及完整 CI 通过 | PR #84 待审核，Fork 与上游 CI 均已通过 |
-| 2026-11-19 | 任务一 kite-x402-hono | [c7c6472](https://github.com/yuzhiyang1/kite-x402-hono/commit/c7c6472b474988558c60af46dc7ed94f1d5f33c2) | 签名与验证两端拒绝非法 HTTP 状态，保留合法 v1 签名；Fork Linux 全量 296 项及完整 CI 通过 | 已于北京时间 11-20 22:47 合并；原始开发日期保留 |
+| 2026-11-19 | 任务一 kite-x402-hono | [c7c6472](https://github.com/yuzhiyang1/kite-x402-hono/commit/c7c6472b474988558c60af46dc7ed94f1d5f33c2) | 签名与验证两端拒绝非法 HTTP 状态，保留合法 v1 签名；Fork Linux 全量 296 项及完整 CI 通过 | PR #86 已于 11 月 20 日 22:47 合并，开发日期仍为 19 日 |
 | 2026-11-20 | 任务一 kite-x402-hono | [948f86f](https://github.com/yuzhiyang1/kite-x402-hono/commit/948f86f54300b6c229e4cfcc6ada3f2d77489836) | webhook 准备和非 Error 异常结构化；Windows 全量/覆盖率 327 项，Fork 与上游 CI 通过 | PR #92 待审核 |
-| 2026-11-20 | 任务一 kite-x402-hono | [d376e74](https://github.com/yuzhiyang1/kite-x402-hono/commit/d376e74410f8fe16d7eb116c1154ee0667c7f0b3) | token bucket 容量安全范围校验；Windows 全量/覆盖率 324 项，Fork 与上游 CI 通过 | 已于北京时间 11-21 13:10 合并；原始开发日期保留 |
+| 2026-11-20 | 任务一 kite-x402-hono | [d376e74](https://github.com/yuzhiyang1/kite-x402-hono/commit/d376e74410f8fe16d7eb116c1154ee0667c7f0b3) | token bucket 容量安全范围校验；Windows 全量/覆盖率 324 项，Fork 与上游 CI 通过 | PR #93 已于 11 月 21 日合并，开发日期仍为 20 日 |
 | 2026-11-20 | 任务一 kite-x402-hono | [36dc415](https://github.com/yuzhiyang1/kite-x402-hono/commit/36dc4157b25beb98f59b24eebf1d23e99577ffd5) | 缓存克隆失败原子性；Windows 独立复跑/覆盖率 324 项，Fork 与上游 CI 通过，首次 CLI 超时已记录 | PR #94 待审核 |
-| 2026-11-21 | 任务一 kite-x402-hono | [1e0bb53](https://github.com/yuzhiyang1/kite-x402-hono/commit/1e0bb538988c3fc597b316c0e4b539e5a5ac9fcd) | 排队超时运行时上界；Windows 全量/覆盖率 363 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-21 13:10 合并；原始开发日期保留 |
-| 2026-11-21 | 任务一 kite-x402-hono | [a6cac42](https://github.com/yuzhiyang1/kite-x402-hono/commit/a6cac428eea2ede274d8cf511f2b110771c2f561) | 结算事件运行时类型及单次快照；Windows 全量/覆盖率 365 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-22 15:25 合并；原始开发日期保留 |
-| 2026-11-21 | 任务一 kite-x402-hono | [8dcee94](https://github.com/yuzhiyang1/kite-x402-hono/commit/8dcee940362075212dca80bd1b547ac0e0cec19d) | 幂等指纹超限指标；Windows 全量/覆盖率 367 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-22 15:25 合并；原始开发日期保留 |
+| 2026-11-21 | 任务一 kite-x402-hono | [1e0bb53](https://github.com/yuzhiyang1/kite-x402-hono/commit/1e0bb538988c3fc597b316c0e4b539e5a5ac9fcd) | 排队超时运行时上界；Windows 全量/覆盖率 363 项及 Fork/上游完整 CI 通过 | PR #102 已于 11 月 21 日合并，开发日期仍为 21 日 |
+| 2026-11-21 | 任务一 kite-x402-hono | [a6cac42](https://github.com/yuzhiyang1/kite-x402-hono/commit/a6cac428eea2ede274d8cf511f2b110771c2f561) | 结算事件运行时类型及单次快照；Windows 全量/覆盖率 365 项及 Fork/上游完整 CI 通过 | PR #103 已于 11 月 22 日合并，开发日期仍为 21 日 |
+| 2026-11-21 | 任务一 kite-x402-hono | [8dcee94](https://github.com/yuzhiyang1/kite-x402-hono/commit/8dcee940362075212dca80bd1b547ac0e0cec19d) | 幂等指纹超限指标；Windows 全量/覆盖率 367 项及 Fork/上游完整 CI 通过 | PR #104 已于 11 月 22 日合并，开发日期仍为 21 日 |
 | 2026-11-22 | 任务一 kite-x402-hono | [5c5977b](https://github.com/yuzhiyang1/kite-x402-hono/commit/5c5977ba5dcaef8eb2cd41b1a2a059bfc93fcfe0) | RPC 重复地址状态统一；Windows 全量/覆盖率 381 项及 Fork/上游完整 CI 通过 | PR #111 待审核 |
 | 2026-11-22 | 任务一 kite-x402-hono | [fb20a46](https://github.com/yuzhiyang1/kite-x402-hono/commit/fb20a4699765fdae6c86651c4047668ffb05f315) | 访问日志异常隔离；Windows 全量/覆盖率 386 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-23 23:27 合并；原始开发日期保留 |
 | 2026-11-22 | 任务一 kite-x402-hono | [be1bc04](https://github.com/yuzhiyang1/kite-x402-hono/commit/be1bc0427d2abc920997b20380e85b5b2efc8e27) | readyz 畸形远端能力处理；Windows 全量/覆盖率 384 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-23 23:27 合并；原始开发日期保留 |
