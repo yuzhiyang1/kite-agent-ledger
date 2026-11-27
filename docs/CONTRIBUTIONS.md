@@ -4,9 +4,9 @@
 
 ## 目标和统计范围
 
-用户于 11 月 22 日将每日目标改为 7 个有实际价值的上游代码 PR，并从 2026 年 11 月 19 日起累计 9 个不同的真实贡献日期。原先的 15 个 PR 目标作为最低累计数量，不再达到 15 个就提前停止日期任务。每天以 7 个为目标；真实任务不足时记录实际数量和缺口，不能降低规范或凑数。已合并的 Hono PR #74 计入目标。自己仓库的活动记录 PR、Open Dev Data 登记、单独的 CI 验证分支，以及重复或无效投稿不计入这 15 个。
+用户于 2026 年 11 月 27 日将每日目标从 7 个提高为 **20 个有实际价值的上游代码 PR**；从 11 月 19 日起累计 9 个不同真实贡献日期的要求保留。原 15 个作为最低累计数量，不能替代日期要求。任务不足时保留实际缺口；查重、独立修复、本人署名、回归和审核标准不降低。自己仓库的活动记录 PR、Open Dev Data 登记、单独 CI 验证分支、重复或无效投稿均不计代码 PR。
 
-当前已提交 **40 / 至少 15** 个代码 PR，其中 **20 个已合并、20 个待审核**（Hono 30 个、Explorer 5 个、ZK Attestation 3 个、Axum 2 个）。11 月 27 日新增七项，均已完成查重、回归及提交前审查；实际验证和未通过项见 [当日审查](reviews/2026-11-27.md)。Hono #139、ZK #44/#51/#64 与 Axum #176 本日已合并；#126/#127 于 25 日、#136 于 26 日合并，开发日期不改写。上游 CI、维护者合并和主办方认可分别记录。
+当前已提交 **53 / 至少 15** 个代码 PR，其中 **20 个已合并、33 个待审核**（Hono 33、Explorer 14、ZK 3、Axum 3）。11 月 27 日首批 7 项，追加 13 项，合计 **20 / 20**；本次统计核验于北京时间 19:02。每个新 PR 均有独立问题复现、回归与提交前/PR 前审查，精确源提交的独立 CI 已通过；详见 [当日审查](reviews/2026-11-27.md)。投稿、自审、CI、维护者合并和组织者认可分别记录。
 
 本轮 Hono 日期为 **8 / 9**（11 月 19–25、27 日）；本月加上 18 日共 **九个不同 Hono 代码贡献日期**，仍需一个后续真实日期。11 月 26 日的排查、CI 准备和登记表补全没有新增 Hono 源代码提交，不计代码贡献日。其他仓库及独立 CI 验证不增加固定仓库日期，最终有效贡献仍待组织者核验。
 
@@ -56,7 +56,21 @@
 | 2026-11-27 | Axum [PR #175](https://github.com/tianzeshi-study/kite-x402-axum/pull/175)，关联 [Issue #173](https://github.com/tianzeshi-study/kite-x402-axum/issues/173) | 拒绝非数组 accepts，避免畸形报价导致签名前异常退出 | [4f1deeb](https://github.com/yuzhiyang1/kite-x402-axum/commit/4f1deeb4c86801d899d3b387e8db1d88c8c09fa5) | 已于北京时间 11-27 18:15 合并；冲突解决 a2534da 后 Python 56 项及上游十三项 CI 通过 |
 | 2026-11-27 | Axum [PR #176](https://github.com/tianzeshi-study/kite-x402-axum/pull/176)，关联 [Issue #174](https://github.com/tianzeshi-study/kite-x402-axum/issues/174) | 服务回报的交易标识须为完整 32 字节十六进制，畸形值保留未确认 | [627286e](https://github.com/yuzhiyang1/kite-x402-axum/commit/627286ee3663af55b9bf686d87f8f145b272b3d9) | 已于 11 月 27 日合并；Windows/Linux Python 各 55 项及上游完整 CI 通过 |
 
-四十条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
+| 2026-11-27 | Hono [PR #182](https://github.com/BrKDDD/kite-x402-hono/pull/182)，关联 [Issue #179](https://github.com/BrKDDD/kite-x402-hono/issues/179) | 自定义认证头按 HTTP 大小写无关规则过滤，防止转发调用方凭据 | [379a4d9](https://github.com/yuzhiyang1/kite-x402-hono/commit/379a4d9ebc4d3f3df7f7fab4e3a1d9a14ab5c9be) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Hono [PR #183](https://github.com/BrKDDD/kite-x402-hono/pull/183)，关联 [Issue #180](https://github.com/BrKDDD/kite-x402-hono/issues/180) | 消费流块时复制原始字节，避免生产者复用 Buffer/Uint8Array 导致正文损坏 | [235bbaa](https://github.com/yuzhiyang1/kite-x402-hono/commit/235bbaa5dc432788e35d534044f53a77ecebb1e8) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Hono [PR #184](https://github.com/BrKDDD/kite-x402-hono/pull/184)，关联 [Issue #181](https://github.com/BrKDDD/kite-x402-hono/issues/181) | 可选 CORS 中间件允许已经支持的旧版 X-PAYMENT 付款头，保留预检限制 | [ad35be5](https://github.com/yuzhiyang1/kite-x402-hono/commit/ad35be5900401cfd4694fac04520c8b1d045d532) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #125](https://github.com/CarryWang/kite-x402-explorer/pull/125)，关联 [Issue #116](https://github.com/CarryWang/kite-x402-explorer/issues/116) | 拒绝非有限发票期限，统一列表、单条查询和结算的精确到期边界 | [7aec4e6](https://github.com/yuzhiyang1/kite-x402-explorer/commit/7aec4e6b84c47e1bdff14db853c8b3b2cb175b07) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #126](https://github.com/CarryWang/kite-x402-explorer/pull/126)，关联 [Issue #117](https://github.com/CarryWang/kite-x402-explorer/issues/117) | 续订快照记录已经验证的新价格，并在周期截止时停止旧周期访问 | [2a16e8e](https://github.com/yuzhiyang1/kite-x402-explorer/commit/2a16e8eee257ef402dd98dee8face90e855d14e8) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #127](https://github.com/CarryWang/kite-x402-explorer/pull/127)，关联 [Issue #118](https://github.com/CarryWang/kite-x402-explorer/issues/118) | 提款时复核信用证明有效期与资格，拒绝反向增加债务的负数还款 | [0951be0](https://github.com/yuzhiyang1/kite-x402-explorer/commit/0951be02762ef84607bc9c85a27400fadfd7282e) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #128](https://github.com/CarryWang/kite-x402-explorer/pull/128)，关联 [Issue #119](https://github.com/CarryWang/kite-x402-explorer/issues/119) | 复制 SLA 心跳、罚款和代金券记录，防止外部改写历史或重置兑换状态 | [f6b4dfa](https://github.com/yuzhiyang1/kite-x402-explorer/commit/f6b4dfa690d2f6f93487d0d1ac816b805a98e7cf) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #129](https://github.com/CarryWang/kite-x402-explorer/pull/129)，关联 [Issue #120](https://github.com/CarryWang/kite-x402-explorer/issues/120) | 隔离商户费率配置及查询返回值，避免外部引用修改已验证策略 | [b32d37c](https://github.com/yuzhiyang1/kite-x402-explorer/commit/b32d37c4007e23bffddf86a99283a862f5b36371) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #130](https://github.com/CarryWang/kite-x402-explorer/pull/130)，关联 [Issue #121](https://github.com/CarryWang/kite-x402-explorer/issues/121) | 最低流动性储备向上取整，避免小额池突破配置比例 | [2e3f2f7](https://github.com/yuzhiyang1/kite-x402-explorer/commit/2e3f2f794cd502334cac268f9516728d29d49cb4) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #131](https://github.com/CarryWang/kite-x402-explorer/pull/131)，关联 [Issue #122](https://github.com/CarryWang/kite-x402-explorer/issues/122) | 畸形 Merkle 包含证明在布尔验证边界内返回 false，不向调用方抛异常 | [7aa6589](https://github.com/yuzhiyang1/kite-x402-explorer/commit/7aa6589a910ec6f967bf858ff290613d1a94ff1d) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #132](https://github.com/CarryWang/kite-x402-explorer/pull/132)，关联 [Issue #123](https://github.com/CarryWang/kite-x402-explorer/issues/123) | 使用整数分子分母计算保费，修复合法信誉分触发 BigInt 异常 | [f32b878](https://github.com/yuzhiyang1/kite-x402-explorer/commit/f32b87818c8fa36aca5ea3d2b53692cb227f5655) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Explorer [PR #133](https://github.com/CarryWang/kite-x402-explorer/pull/133)，关联 [Issue #124](https://github.com/CarryWang/kite-x402-explorer/issues/124) | 订阅使用、退款和摘要绑定原套餐及提供方，复用现有续费身份规则 | [a74337c](https://github.com/yuzhiyang1/kite-x402-explorer/commit/a74337c6c85ee8db54a2b3def3bd45dbf0c2aa90) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Axum [PR #181](https://github.com/tianzeshi-study/kite-x402-axum/pull/181)，关联 [Issue #180](https://github.com/tianzeshi-study/kite-x402-axum/issues/180) | 只读对账拒绝与所属回执矛盾的日志交易/区块元数据，保留缺失字段兼容 | [056f567](https://github.com/yuzhiyang1/kite-x402-axum/commit/056f567e52b670d604add1088c59eff68e7f40c8) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+
+五十三条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
 
 ## 11 月 19 日的实现和验证
 
@@ -237,7 +251,7 @@ ZK 单项 105 项、本地合约七项、类型/构建通过；与 #44 组合后
 
 当日达到七个投稿，累计三十三个、十一合并、二十二待审；Hono 只增加一个日期，本轮 7/9、本月八日，仍需两个后续不同日期。每日七个任务保持启用，下一次北京时间 11 月 26 日 9:30。Open Dev Data #3157 仍待合并；生态映射、抓取与个人归因未取得新增完成证据。活动及奖励最终认定仍待组织者审核。
 
-## 11 月 27 日的实现、审核与维护
+## 11 月 27 日首批的实现、审核与维护
 
 当日新增 Hono #172/#173、Explorer #111/#112、ZK #64、Axum #175/#176 七项；各分支均从当时最新上游创建，先登记 Issue 和复现，再核对指南/仓库规则、查重、文件范围、兼容性、业务注释、负向回归、真实检查、暂存秘密扫描、本人作者关联及同名远端头。完整源 SHA、首次失败、CI 与边界见 [11 月 27 日提交审查](reviews/2026-11-27.md)。
 
@@ -249,4 +263,12 @@ ZK 新增四项回归原代码全失败，修复后全量 105、合约七项及�
 
 Axum 两项 Windows Python 3.13 与独立 Linux Python 3.12 分别 54、55 项通过。两个原 PR 的完整上游 CI 后续获批准并通过；#176 随后合并。维护者请求解决 #175 冲突后，保留原发布历史，合入最新目标 master 并同时保留两组测试；冲突解决提交 a2534da 后完整 Python 56 项通过，相对最新 master 仍只剩原两文件修复。新提交上游十三项完整 CI 已通过（45979832084），GitHub 为 CLEAN / MERGEABLE；旧头和新头的验证分别保存。
 
-累计四十项（二十合并、二十待审），今日七项只增加一个 Hono 日期，本轮 8/9、本月九日，仍需一个后续日期。11 月 26 日已按群公告核对登记表本人第八行，并补齐 D8 固定仓库、E8 原创项目，页面显示保存成功；该登记不增加代码日期。Open Dev Data #3157 仍开放，公开映射、抓取与个人归因没有新增完成证据。每日任务保持启用，不提前宣布整期活动或奖励完成。
+截至首批材料提交时累计四十项（二十合并、二十待审），该批七项只增加一个 Hono 日期，本轮 8/9、本月九日，仍需一个后续日期。11 月 26 日已按群公告核对登记表本人第八行，并补齐 D8 固定仓库、E8 原创项目，页面显示保存成功；该登记不增加代码日期。Open Dev Data #3157 仍开放，公开映射、抓取与个人归因没有新增完成证据。每日任务保持启用，不提前宣布整期活动或奖励完成。
+
+## 11 月 27 日追加十三项
+
+本次按用户提高到每日 20 个的指令追加 Hono 三项、Explorer 九项、Axum 一项，今日合计二十项。每项单独 Issue、两文件修复与必要回归；从最新上游独立分支开发，原始作者和远端头已核对。上述清单和 [当日追加审查](reviews/2026-11-27.md#追加十三项的逐项审查) 保存完整提交及 CI 证据。验证专用分支和本次材料 PR 不计数量。
+
+三个 Hono 精确提交 Linux 完整 CI 及打包安装通过；Windows 首次并发超时保留，隔离后 462、462、463 项和覆盖率全部通过。九个 Explorer 精确提交各自 Linux 全量 293–295 项、零失败零跳过，生产 Docker 禁用外网后的 API/SPA 验收通过；Windows 各八项既有 POSIX 测试跳过。Axum 精确提交完整十三项 CI 通过，Python 58 项；首轮 CI 启动早于源码推送，部分 checkout 失败，源码推送核对后仅重跑失败任务并通过，原失败记录保留。
+
+今日仍只增加一个 Hono 日期，本轮 8/9、本月九日，至少还需一个后续真实日期。每日目标现为 20 个；过去日期按当时实际数量保留，不回填或补造日期。
