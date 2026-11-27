@@ -1,12 +1,14 @@
 # KiteAI 第二期任务核对与贡献记录
 
-核验日期为 2026 年 11 月 25 日，开发日期按 Asia/Shanghai 记录。本页供参与者和组织者核验，不替代组织者审核，也不表示 EC 已完成抓取或归因。
+核验日期为 2026 年 11 月 27 日，开发日期按 Asia/Shanghai 记录。本页供参与者和组织者核验，不替代组织者审核，也不表示 EC 已完成抓取或归因。
 
 依据为用户提供的《KiteAI 第二期开发者参与指南》（2026 年 11 月 16 日）及 [OpenBuild 第二期正式公告](https://openbuild.xyz/learn/challenges/2115131537)。一般参与者必须完成两项任务，任务二不能替代任务一。
 
 ## 当前结论
 
-任务一的 Hono PR #74、#81、#86、#93、#102、#103、#104、#112、#113、#125、#128 已合并；合并日期不替代开发日期。11 月 25 日新增三项 Hono、三项 Explorer 及一项 ZK，共七个代码投稿。累计三十三个（十一合并、二十二待审）；新 Hono 两端 CI 通过，Explorer 本人 Fork Linux/Docker 组合验证通过但上游仍需维护者批准，ZK 功能检查与既有工具/审计限制单列。最终有效计入由主办方核验。本轮固定 Hono 日期 7/9，本月 18–25 日共八日，还需两个不同日期；其他仓库和 CI 验证 PR 不增加该日期。持续任务保持启用；详情见 [每日贡献记录](CONTRIBUTIONS.md) 和 [当日审查](reviews/2026-11-25.md)。任务二首版和真实测试网付款已有证据，持续维护、登记后的归因和最终验收尚未完成。
+当前累计四十个代码投稿：二十合并、二十待审（Hono 十五合并/十五待审、Explorer 五待审、ZK 三项均合并、Axum 两项均合并）。11 月 27 日新增七项，检查与限制按实际提交分别保存；维护者要求的 Axum #175 冲突已在原分支修复并推送，随后获维护者合并，原测试和 #176 已合并的测试同时保留，新提交十三项完整 CI 已通过，GitHub 为 CLEAN / MERGEABLE。
+
+本轮固定 Hono 日期 8/9，本月 18–25、27 日共九日，还需一个后续真实日期；26 日排查与登记没有计入。其他仓库和独立 CI 验证不增加该日期。投稿、自审、CI、维护者合并和组织者认可分别统计。详情见 [每日贡献记录](CONTRIBUTIONS.md) 与 [当日审查](reviews/2026-11-27.md)。任务二首版及真实测试网付款已有证据，持续维护、Open Dev Data 后续归因和最终验收尚未完成。
 
 ## 登记记录
 
@@ -14,7 +16,7 @@
 - 已于 2026 年 11 月 18 日通过已登录的本人 OpenBuild 账号提交第二期官网免费报名。表单返回完成回执，活动页按钮变为 `Joined`。登记表与官网报名均已办理；不据此认定已通过贡献验收或获得奖励资格。个人联系方式、钱包地址及表单截图不存入公开仓库。
 - [官方登记表](https://docs.google.com/spreadsheets/d/1i_hiReiP9CzdcLdaDkPY57IczAN7uzVPtaEyvT9Tr3g/edit?gid=1757293515#gid=1757293515) 的“活动登记”工作表第 8 行已存在本人昵称及账号，未重复添加。
 - 已在本人 GitHub 单元格 C8 的备注中补充任务一固定仓库、开发方向、首个 Issue/PR、任务二仓库及验收证据、Open Dev Data PR。重新加载后核实备注仍在，并确认页面显示已保存到云端硬盘。
-- 表格原有字段仅为序号、昵称和 GitHub 账号；没有擅自新增列。仓库与方向通过本人行备注提供，仍待组织者核验认可。登记信息保存不等于组织者批准，也不等于奖励申请已受理。
+- 2026 年 11 月 26 日按群公告重新核对本人第 8 行，GitHub 主页准确；在表格既有的“活跃仓库”D8 补齐固定 Hono 仓库，在“个人仓库”E8 补齐 kite-agent-ledger，核实显示已保存到云端硬盘。未重复登记或新增列。原 C8 备注中的方向/证据保留，组织者认可与奖励验收仍需分别核验。
 
 ## 任务一逐项核对
 
@@ -28,7 +30,7 @@
 | 实际代码修复和回归测试 | 修复空字符串最旧键不被淘汰导致认证缓存突破容量上限；新增三项测试，其中两项在原代码上失败 | 已实现并验证 |
 | 按项目规范检查和构建 | 首项贡献使用 Node 22.22.0、Bun 1.4.2；281 项测试、格式、类型、构建及独立安装验证通过；后续贡献的实际检查与环境限制按每日贡献记录分别保存 | 首项已合并；Hono 新贡献两端 CI 通过，其他仓库按当日审查单列 |
 | 本人 Commit、本人 PR | [Commit 46fc252](https://github.com/yuzhiyang1/kite-x402-hono/commit/46fc25202ae917139e787c54ab74b0e03cd271ba) 的 GitHub 作者关联为 yuzhiyang1；[PR #74](https://github.com/BrKDDD/kite-x402-hono/pull/74) 同账号发起 | 已于 11 月 18 日合并；新增 PR #78 的本人署名也已核实 |
-| 每个自然月至少十个不同日期 | 当前 Hono 代码贡献日期为 2026-11-18 至 2026-11-25；18–23 日已有合并代码，24、25 日投稿待审，最终有效计入仍以组织者审核为准 | 未达标；11 月至少还需两个不同日期 |
+| 每个自然月至少十个不同日期 | Hono 实际代码日期为 2026-11-18 至 25 日及 27 日，共九日；本轮从 19 日起 8/9。26 日排查/登记不计代码日，合并日期不替代开发日期 | 未达标；本月至少还需一个后续真实日期，最终有效计入由组织者核验 |
 | 持续维护并响应审核 | 保持同一 PR 处理 review；后续修改先确认真实需求与重复工作 | 持续进行，不能提前记为完成 |
 
 缓存修复只影响显式选用的 `PaymentAuthCache` 工具。它不会在默认付费路由启用认证缓存，也不改变付款验证或结算流程。本次不需要链上付款，测试中的 facilitator 为项目原有模拟实现。
@@ -71,12 +73,12 @@ Passport `session execute` 的托管执行路径仍返回服务端内部错误�
 | 2026-11-21 | 任务一 kite-x402-hono | [a6cac42](https://github.com/yuzhiyang1/kite-x402-hono/commit/a6cac428eea2ede274d8cf511f2b110771c2f561) | 结算事件运行时类型及单次快照；Windows 全量/覆盖率 365 项及 Fork/上游完整 CI 通过 | PR #103 已于 11 月 22 日合并，开发日期仍为 21 日 |
 | 2026-11-21 | 任务一 kite-x402-hono | [8dcee94](https://github.com/yuzhiyang1/kite-x402-hono/commit/8dcee940362075212dca80bd1b547ac0e0cec19d) | 幂等指纹超限指标；Windows 全量/覆盖率 367 项及 Fork/上游完整 CI 通过 | PR #104 已于 11 月 22 日合并，开发日期仍为 21 日 |
 | 2026-11-22 | 任务一 kite-x402-hono | [5c5977b](https://github.com/yuzhiyang1/kite-x402-hono/commit/5c5977ba5dcaef8eb2cd41b1a2a059bfc93fcfe0) | RPC 重复地址状态统一；Windows 全量/覆盖率 381 项及 Fork/上游完整 CI 通过 | PR #111 待审核 |
-| 2026-11-22 | 任务一 kite-x402-hono | [fb20a46](https://github.com/yuzhiyang1/kite-x402-hono/commit/fb20a4699765fdae6c86651c4047668ffb05f315) | 访问日志异常隔离；Windows 全量/覆盖率 386 项及 Fork/上游完整 CI 通过 | PR #112 待审核 |
-| 2026-11-22 | 任务一 kite-x402-hono | [be1bc04](https://github.com/yuzhiyang1/kite-x402-hono/commit/be1bc0427d2abc920997b20380e85b5b2efc8e27) | readyz 畸形远端能力处理；Windows 全量/覆盖率 384 项及 Fork/上游完整 CI 通过 | PR #113 待审核 |
-| 2026-11-23 | 任务一 kite-x402-hono | [11a04b9](https://github.com/yuzhiyang1/kite-x402-hono/commit/11a04b91fa8e56f0875c06af3d4012a2f645b817) | 时钟回拨不回退补充起点，避免限流桶重复获得额度；Windows 402 项及两端完整 CI 通过 | PR #125 待审核 |
-| 2026-11-23 | 任务一 kite-x402-hono | [bd7c9b8](https://github.com/yuzhiyang1/kite-x402-hono/commit/bd7c9b81936ecdc70670a022e7580cc3c9bc393d) | 固定可信代理策略，防止调用方清空列表后意外信任任意转发头；Windows 403 项及两端完整 CI 通过 | PR #126 待审核 |
-| 2026-11-23 | 任务一 kite-x402-hono | [77d77da](https://github.com/yuzhiyang1/kite-x402-hono/commit/77d77da10cc3f9170a120eddf9ea9c40aaebf901) | 保留 __proto__ 等目标名的健康记录，避免克隆和 JSON 中丢失证据；Windows 401 项及两端完整 CI 通过 | PR #127 待审核 |
-| 2026-11-23 | 任务一 kite-x402-hono | [fc3307f](https://github.com/yuzhiyang1/kite-x402-hono/commit/fc3307f3a3af7763cfba327611105a981e01517e) | 为低小数 RPS 的默认容量保留至少一个 token，使合法请求可被接纳；Windows 402 项及两端完整 CI 通过 | PR #128 待审核 |
+| 2026-11-22 | 任务一 kite-x402-hono | [fb20a46](https://github.com/yuzhiyang1/kite-x402-hono/commit/fb20a4699765fdae6c86651c4047668ffb05f315) | 访问日志异常隔离；Windows 全量/覆盖率 386 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-23 23:27 合并；原始开发日期保留 |
+| 2026-11-22 | 任务一 kite-x402-hono | [be1bc04](https://github.com/yuzhiyang1/kite-x402-hono/commit/be1bc0427d2abc920997b20380e85b5b2efc8e27) | readyz 畸形远端能力处理；Windows 全量/覆盖率 384 项及 Fork/上游完整 CI 通过 | 已于北京时间 11-23 23:27 合并；原始开发日期保留 |
+| 2026-11-23 | 任务一 kite-x402-hono | [11a04b9](https://github.com/yuzhiyang1/kite-x402-hono/commit/11a04b91fa8e56f0875c06af3d4012a2f645b817) | 时钟回拨不回退补充起点，避免限流桶重复获得额度；Windows 402 项及两端完整 CI 通过 | 已于北京时间 11-24 16:19 合并；原始开发日期保留 |
+| 2026-11-23 | 任务一 kite-x402-hono | [bd7c9b8](https://github.com/yuzhiyang1/kite-x402-hono/commit/bd7c9b81936ecdc70670a022e7580cc3c9bc393d) | 固定可信代理策略，防止调用方清空列表后意外信任任意转发头；Windows 403 项及两端完整 CI 通过 | 已于北京时间 11-25 11:39 合并；原始开发日期保留 |
+| 2026-11-23 | 任务一 kite-x402-hono | [77d77da](https://github.com/yuzhiyang1/kite-x402-hono/commit/77d77da10cc3f9170a120eddf9ea9c40aaebf901) | 保留 __proto__ 等目标名的健康记录，避免克隆和 JSON 中丢失证据；Windows 401 项及两端完整 CI 通过 | 已于北京时间 11-25 11:39 合并；原始开发日期保留 |
+| 2026-11-23 | 任务一 kite-x402-hono | [fc3307f](https://github.com/yuzhiyang1/kite-x402-hono/commit/fc3307f3a3af7763cfba327611105a981e01517e) | 为低小数 RPS 的默认容量保留至少一个 token，使合法请求可被接纳；Windows 402 项及两端完整 CI 通过 | 已于北京时间 11-24 16:19 合并；原始开发日期保留 |
 | 2026-11-18 | 任务二 kite-agent-ledger | [9cd296e](https://github.com/yuzhiyang1/kite-agent-ledger/commit/9cd296ea29acf3074f74efd7a2cd427247a2e7cf) | 初版 Agent 支付审计与测试网对账；测试、wheel 与 CI 验证 | 已进入 trunk |
 | 2026-11-18 | 任务二 kite-agent-ledger | [c9caa2b](https://github.com/yuzhiyang1/kite-agent-ledger/commit/c9caa2bd31b6c1915c44bfd133c3be2692eb8363) | 真实测试币付款、响应头导入和复现脚本；20 项测试及 CI | PR #1 已合并 |
 
@@ -107,8 +109,8 @@ Passport `session execute` 的托管执行路径仍返回服务端内部错误�
 
 ## 后续必须完成的事项
 
-1. Hono 已合并十一项；继续在各自同一 PR 处理十七项 Hono、三项 Explorer、两项 ZK 的维护者审核，具体链接见每日贡献表。Explorer 上游 CI 还需维护者批准；未发生的批准或合并不能提前记作通过。
-2. 11 月在至少另外两个不同日期继续产生有独立价值的真实代码贡献。12 月也需独立满足至少十个不同日期，不能跨自然月抵扣。实际活动周期及最终计数以正式公告和组织者核验为准。
+1. 继续在原 PR 处理十五项 Hono、五项 Explorer 的维护者审核；ZK 三项已合并。#175 冲突已修复，新提交十三项完整 CI 通过后于北京时间 18:15 被维护者合并。Explorer 上游 CI 仍需批准；未发生的批准/合并不能提前计入。
+2. 11 月在至少另外一个不同日期继续产生有独立价值的真实 Hono 代码贡献。12 月也需独立满足至少十个不同日期，不能跨自然月抵扣。实际活动周期及最终计数以正式公告和组织者核验为准。
 3. 后续贡献继续先查需求和重复工作，再做修复与回归；不倒填 Git 日期、制造空提交、修改时间戳或把自动检查次数当成人工贡献。
 4. 按实际使用反馈持续维护原创项目，并在材料提交时更新本页的日期、Commit、演示、测试与审核结果。
 5. 跟进 Open Dev Data PR #3157 的维护者审核，再分别核对公开映射、抓取和作者归因；当前账号没有该上游合并权限。
