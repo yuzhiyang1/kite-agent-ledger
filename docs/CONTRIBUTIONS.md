@@ -1,14 +1,16 @@
 # 指定项目的每日代码贡献
 
-更新日期：2026 年 11 月 27 日，按 Asia/Shanghai 记录开发日期。
+更新日期：2026 年 11 月 28 日，按 Asia/Shanghai 记录开发日期。
 
 ## 目标和统计范围
 
 用户于 2026 年 11 月 27 日将每日目标从 7 个提高为 **20 个有实际价值的上游代码 PR**；从 11 月 19 日起累计 9 个不同真实贡献日期的要求保留。原 15 个作为最低累计数量，不能替代日期要求。任务不足时保留实际缺口；查重、独立修复、本人署名、回归和审核标准不降低。自己仓库的活动记录 PR、Open Dev Data 登记、单独 CI 验证分支、重复或无效投稿均不计代码 PR。
 
-当前已提交 **53 / 至少 15** 个代码 PR，其中 **20 个已合并、33 个待审核**（Hono 33、Explorer 14、ZK 3、Axum 3）。11 月 27 日首批 7 项，追加 13 项，合计 **20 / 20**；本次统计核验于北京时间 19:02。每个新 PR 均有独立问题复现、回归与提交前/PR 前审查，精确源提交的独立 CI 已通过；详见 [当日审查](reviews/2026-11-27.md)。投稿、自审、CI、维护者合并和组织者认可分别记录。
+当前已提交 **54 / 至少 15** 个代码 PR，**21 个已合并、33 个待审核**（Hono 34、Explorer 14、ZK 3、Axum 3）。11 月 27 日实际 20/20，11 月 28 日实际 **1/20**，没有把今天写成二十个。新 [Hono #186](https://github.com/BrKDDD/kite-x402-hono/pull/186) 完成规范审查和精确源提交独立 CI；[当日审查](reviews/2026-11-28.md) 保存前后失败/通过、分支和署名证据。
 
-本轮 Hono 日期为 **8 / 9**（11 月 19–25、27 日）；本月加上 18 日共 **九个不同 Hono 代码贡献日期**，仍需一个后续真实日期。11 月 26 日的排查、CI 准备和登记表补全没有新增 Hono 源代码提交，不计代码贡献日。其他仓库及独立 CI 验证不增加固定仓库日期，最终有效贡献仍待组织者核验。
+固定 Hono 的原始源提交经 GitHub 重新核验本人作者关联和 Asia/Shanghai 作者日期：本轮 **9/9**（11 月 19–25、27–28 日），本月连同 18 日共 **10 个不同日期**。26 日没有新增 Hono 源提交，继续排除；合并时间和其他仓库不增加日期。按本轮预设“累计至少十五个代码 PR + 九个真实 Hono 日期”的停止条件，结束日常新增并停用该自动任务；今日实际一个保留，不为凑满结束后的日配额制造提交。日期台账达到数量门槛不等于每个日期已获组织者认可。
+
+主办方对有效贡献的最终认定、待审 PR、Open Dev Data 映射/抓取/作者归因、原创项目持续维护及奖励验收仍未提前完成。后续月份若继续参加，须按当月正式要求重新核验十个日期，不能跨月抵扣。本轮数量/日期目标结束不表示整期活动或奖励已完成。
 
 ## 已提交的贡献
 
@@ -68,9 +70,11 @@
 | 2026-11-27 | Explorer [PR #131](https://github.com/CarryWang/kite-x402-explorer/pull/131)，关联 [Issue #122](https://github.com/CarryWang/kite-x402-explorer/issues/122) | 畸形 Merkle 包含证明在布尔验证边界内返回 false，不向调用方抛异常 | [7aa6589](https://github.com/yuzhiyang1/kite-x402-explorer/commit/7aa6589a910ec6f967bf858ff290613d1a94ff1d) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
 | 2026-11-27 | Explorer [PR #132](https://github.com/CarryWang/kite-x402-explorer/pull/132)，关联 [Issue #123](https://github.com/CarryWang/kite-x402-explorer/issues/123) | 使用整数分子分母计算保费，修复合法信誉分触发 BigInt 异常 | [f32b878](https://github.com/yuzhiyang1/kite-x402-explorer/commit/f32b87818c8fa36aca5ea3d2b53692cb227f5655) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
 | 2026-11-27 | Explorer [PR #133](https://github.com/CarryWang/kite-x402-explorer/pull/133)，关联 [Issue #124](https://github.com/CarryWang/kite-x402-explorer/issues/124) | 订阅使用、退款和摘要绑定原套餐及提供方，复用现有续费身份规则 | [a74337c](https://github.com/yuzhiyang1/kite-x402-explorer/commit/a74337c6c85ee8db54a2b3def3bd45dbf0c2aa90) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
-| 2026-11-27 | Axum [PR #181](https://github.com/tianzeshi-study/kite-x402-axum/pull/181)，关联 [Issue #180](https://github.com/tianzeshi-study/kite-x402-axum/issues/180) | 只读对账拒绝与所属回执矛盾的日志交易/区块元数据，保留缺失字段兼容 | [056f567](https://github.com/yuzhiyang1/kite-x402-axum/commit/056f567e52b670d604add1088c59eff68e7f40c8) | 待审核；本人 Fork 精确源提交 CI 已通过；上游检查和维护者合并分别核验 |
+| 2026-11-27 | Axum [PR #181](https://github.com/tianzeshi-study/kite-x402-axum/pull/181)，关联 [Issue #180](https://github.com/tianzeshi-study/kite-x402-axum/issues/180) | 只读对账拒绝与所属回执矛盾的日志交易/区块元数据，保留缺失字段兼容 | [056f567](https://github.com/yuzhiyang1/kite-x402-axum/commit/056f567e52b670d604add1088c59eff68e7f40c8) | 已于北京时间 11-27 19:12 合并；原始开发日期保留 |
 
-五十三条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
+| 2026-11-28 | Hono [PR #186](https://github.com/BrKDDD/kite-x402-hono/pull/186)，关联 [Issue #185](https://github.com/BrKDDD/kite-x402-hono/issues/185) | 在模式加载前拒绝未知 CLI 参数，防止拼错离线命令意外启动付费网关或发起诊断 HTTP | [a0d8001](https://github.com/yuzhiyang1/kite-x402-hono/commit/a0d8001853a933c23c62f8fb727fd58ba94ec8f3) | 待审核；Windows 全量/覆盖率各 464 通过，Fork 精确源完整 CI 通过；上游状态单独核对 |
+
+五十四条原始代码提交的 GitHub 作者均已核实关联到本人账号 `yuzhiyang1`。合并时间不替代开发日期；同一天的多个 Commit 或 PR 不额外增加贡献日期。
 
 ## 11 月 19 日的实现和验证
 
@@ -272,3 +276,11 @@ Axum 两项 Windows Python 3.13 与独立 Linux Python 3.12 分别 54、55 项�
 三个 Hono 精确提交 Linux 完整 CI 及打包安装通过；Windows 首次并发超时保留，隔离后 462、462、463 项和覆盖率全部通过。九个 Explorer 精确提交各自 Linux 全量 293–295 项、零失败零跳过，生产 Docker 禁用外网后的 API/SPA 验收通过；Windows 各八项既有 POSIX 测试跳过。Axum 精确提交完整十三项 CI 通过，Python 58 项；首轮 CI 启动早于源码推送，部分 checkout 失败，源码推送核对后仅重跑失败任务并通过，原失败记录保留。
 
 今日仍只增加一个 Hono 日期，本轮 8/9、本月九日，至少还需一个后续真实日期。每日目标现为 20 个；过去日期按当时实际数量保留，不回填或补造日期。
+
+## 11 月 28 日的实现、日期核验与本轮收尾
+
+新增 Hono #186 修复未知 CLI 参数被忽略的实际问题。六项新增回归在原实现失败，修复后连同原五项全部通过；格式、类型、Windows 464 项全量及覆盖率、构建、零漏洞生产审计和精确源 Linux 完整 CI 通过，包含模拟验收、打包与干净安装。未进行真实付款。详细流程及共享 CLI 文件与 #119 的合并协调见 [当日审查](reviews/2026-11-28.md)。
+
+原始 Hono 三十四条源提交通过 GitHub GraphQL 逐条核对 oid、authoredDate、author.user.login；本轮九日、本月十日，没有改作者日期。Axum #181 在昨日后续被维护者合并，现累计二十一合并、三十三待审。无新增待处理的人类 review 评论。
+
+今天实际一个，不声称达到每日二十。按已设定的本轮累计数量和日期停止条件，关闭日常新增自动任务；后续已有投稿的审核、组织者认定、Open Dev Data #3157、原创项目维护和奖励验收仍单列。文档 PR、Issue 和独立 CI 不计代码数量或日期。
